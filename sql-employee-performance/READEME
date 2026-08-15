@@ -1,0 +1,18 @@
+# Employee Sales Performance Analysis (SQL Server / T-SQL)
+
+## Question
+Who are the top-performing sales employees, both by total revenue and by average order value?
+
+## Data
+Microsoft's Northwind sample database (Employees, Orders, Order Details tables).
+
+## Approach
+- Calculated total orders and total revenue per employee using JOINs and GROUP BY
+- Computed average revenue per order to compare employees fairly regardless of order count
+- Scored employees 1–5 using the NTILE window function based on average order value
+
+## Tools
+SQL Server, T-SQL, CTEs (WITH), Window Functions (NTILE)
+
+## Key Insight
+The employee with the highest total revenue was not the same employee with the highest average order value — showing that volume and deal size are two different dimensions of performance.
